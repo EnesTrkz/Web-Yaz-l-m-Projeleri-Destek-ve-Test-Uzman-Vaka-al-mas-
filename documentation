@@ -1,0 +1,57 @@
+Test Senaryoları:
+Ana Sayfa:
+
+Ana sayfa başarıyla yüklenmeli.
+Temel navigasyon bağlantıları (Ana Sayfa, İlanlar, Başvuru Formu vb.) doğru çalışmalı.
+Güncel kariyer fırsatları ve duyurular görüntülenmeli.
+İlanlar Sayfası:
+
+İlanlar sayfası başarıyla yüklenmeli.
+Filtreleme seçenekleri (pozisyon, departman, konum vb.) doğru çalışmalı.
+İlanlara tıklanarak detayları görüntülenmeli.
+Başvuru Formu:
+
+Başvuru formu sayfası başarıyla yüklenmeli.
+Form alanları doğru ve eksiksiz doldurulabilmeli.
+Dosya eklemek için gerekli kontroller çalışmalı.
+Form başarıyla gönderilebilmeli.
+Giriş Yap / Üye Ol:
+
+Kullanıcı girişi ve yeni üyelik işlemleri doğru çalışmalı.
+Hatalı giriş durumlarında uygun hata mesajları görüntülenmeli.
+Şifre sıfırlama işlemi başarıyla gerçekleştirilmeli.
+Mobil Uyumluluk:
+
+Web sitesi farklı mobil cihazlarda ve tarayıcılarda test edilmeli.
+Sayfalar ve formlar mobil cihazlarda düzgün görüntülenmeli ve kullanılabilir olmalı.
+Hata Durumları:
+
+Hatalı URL'lerde 404 sayfası görüntülenmeli.
+Sunucu hatası durumlarında uygun hata sayfaları görüntülenmeli.
+Manuel Test Dökümü:
+Ana Sayfa:
+
+Tarayıcı uyumluluğu kontrol edilmeli (Chrome, Firefox, Safari, vb.).
+Navigasyon bağlantılarına tıklanarak sayfaların doğru yönlendirildiği kontrol edilmeli.
+Güncel kariyer fırsatları ve duyuruların görüntülenmesi kontrol edilmeli.
+İlanlar Sayfası:
+
+İlanlara tıklanarak detay sayfalarının doğru yüklendiği kontrol edilmeli.
+Filtreleme seçenekleri ile ilanların doğru bir şekilde sınıflandırıldığı kontrol edilmeli.
+Başvuru Formu:
+
+Form alanlarının doğru bir şekilde doldurulabildiği kontrol edilmeli.
+Dosya eklemek için uygun kontrollerin olduğu kontrol edilmeli.
+Formun başarıyla gönderilebildiği kontrol edilmeli.
+Giriş Yap / Üye Ol:
+
+Kullanıcı girişi ve üyelik işlemlerinin doğru bir şekilde gerçekleştirilebildiği kontrol edilmeli.
+Hatalı giriş durumlarında uygun hata mesajlarının görüntülendiği kontrol edilmeli.
+Mobil Uyumluluk:
+
+Mobil cihazlarda ve farklı tarayıcılarda sayfaların doğru görüntülendiği kontrol edilmeli.
+Menü ve formların mobil cihazlarda düzgün çalıştığı kontrol edilmeli.
+Hata Durumları:
+
+Hatalı URL'lerde 404 sayfasının doğru görüntülendiği kontrol edilmeli.
+Sunucu hataları durumunda uygun hata sayfalarının görüntülendiği kontrol edilmeli.

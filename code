@@ -1,0 +1,54 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+class BaykartechTest:
+    def __init__(self):
+        self.driver = webdriver.Chrome()  # WebDriver'ınızın uygun olduğu bir tarayıcıya değiştirin
+
+    def navigate_to_url(self, url):
+        self.driver.get(url)
+
+    def click_navbar_element(self, element_text):
+        try:
+            element = WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, f"//a[contains(text(), '{element_text}')]"))
+            )
+            element.click()
+            print(f"Clicked on '{element_text}' in the navbar.")
+        except Exception as e:
+            print(f"Error clicking '{element_text}' in the navbar: {e}")
+
+    def verify_page_title(self, expected_title):
+        actual_title = self.driver.title
+        assert actual_title == expected_title, f"Expected title: '{expected_title}', Actual title: '{actual_title}'"
+
+    def switch_language(self, language):
+        # Burada dil değiştirme işlemini eklemelisiniz. Örneğin, bir dil seçme düğmesine tıklama ve sayfa dilini kontrol etme.
+
+if __name__ == "__main__":
+    # Senaryo A
+    test_case_A = BaykartechTest()
+    test_case_A.navigate_to_url("https://baykartech.com")
+    
+    # Navbar elementlerine tıklama
+    navbar_elements = ["Home", "Products", "Services", "Contact"]
+    for element in navbar_elements:
+        test_case_A.click_navbar_element(element)
+
+    # Sayfa başlığını kontrol etme
+    test_case_A.verify_page_title("Expected Page Title")
+
+    # Senaryo B
+    test_case_B = BaykartechTest()
+    test_case_B.navigate_to_url("https://baykartech.com")
+
+    # Dil değiştirme
+    test_case_B.switch_language("Turkish")  # Örneğin, "Turkish" olarak değiştirilmeli
+
+    # Sayfa başlığını kontrol etme
+    test_case_B.verify_page_title("Expected Page Title")
+    
+    test_case_A.driver.quit()
+    test_case_B.driver.quit()
